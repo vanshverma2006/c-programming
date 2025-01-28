@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/vanshverma/c programing/project_1/output/guess_the_num_using_do_while'
+relocations:     []
+...
