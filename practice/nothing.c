@@ -83,7 +83,6 @@ int main() {
     //     n*=a;
     // }
     // printf("%d",n);
-    
     int n;
     printf("enter a num :: ");
     scanf("%d",&n);
@@ -104,6 +103,15 @@ int main() {
             }
         }
     }
+    for (int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            if(array[i][j]>=largest){
+                largest=array[i][j];
+                printf("array[%d][%d]\n",i,j);
+                break;
+            }
+        }
+    }
 
     for (int i=0;i<n;i++){
         for(int j=0;j<n;j++){
@@ -114,6 +122,7 @@ int main() {
     }
     printf("%d",largest);
     printf("\n%d",least);
+
 
 
 

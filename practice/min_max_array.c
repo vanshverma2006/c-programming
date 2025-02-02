@@ -1,5 +1,7 @@
 #include<stdio.h>
 int main(){
+
+    // first approach
         int n;
     printf("enter a num :: ");
     scanf("%d",&n);
@@ -30,5 +32,7 @@ int main(){
     }
     printf("%d",largest);
     printf("\n%d",least);
+
+
     return 0;
 }
