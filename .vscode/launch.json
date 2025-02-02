@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/vanshverma/c programing/os",
-      "program": "/Users/vanshverma/c programing/os/build/Debug/outDebug"
+      "cwd": "/Users/vanshverma/c programing/patterns",
+      "program": "/Users/vanshverma/c programing/patterns/build/Debug/outDebug"
     }
   ]
 }
