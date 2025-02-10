@@ -126,21 +126,43 @@ int main(){
         // printf("%d",factorial);
 
 
-    int num, reverse = 0, remainder;
+//     int num, reverse = 0, remainder;
 
-    // Input the number
-    printf("Enter a number: ");
-    scanf("%d", &num);
+//     // Input the number
+//     printf("Enter a number: ");
+//     scanf("%d", &num);
 
-    // Reverse the number
-    while (num != 0) {
-        remainder = num % 10;          // Get the last digit
-        reverse = reverse * 10 + remainder; // Append the digit to reverse
-        num = num / 10;               // Remove the last digit
-    }
+//     // Reverse the number
+//     while (num != 0) {
+//         remainder = num % 10;          // Get the last digit
+//         reverse = reverse * 10 + remainder; // Append the digit to reverse
+//         num = num / 10;               // Remove the last digit
+//     }
 
-    // Print the reversed number
-    printf("Reversed Number: %d\n", reverse);
+//     // Print the reversed number
+//     printf("Reversed Number: %d\n", reverse);
+
+        /*
+        count number of digits 
+        */
+       int n,totalNum=0;
+       scanf("%d",&n);
+       while(n>=1){    
+        n=n/10;
+        totalNum+=1;
+       }
+       printf("%d",totalNum);
+
+
+
+       int a,totalNum=0;
+       scanf("%d",&a);
+       do{
+        n=n/10;
+        totalNum+=1;
+       }while(n>=1);
+
+
 
     
         
