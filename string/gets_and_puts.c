@@ -1,10 +1,10 @@
 #include<stdio.h>
 int main(){
-    char str[50];
+    char str[]="hello how are you";
     // gets(str);//used to input string with multiple words and spaces 
+    printf("%s",str);//print string
     
-    puts(str);
+    puts(str);// it also prints the string 
 
-    printf("%s",str);
     return 0;
 }
