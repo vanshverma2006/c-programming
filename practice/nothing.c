@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdint.h>
+#include <string.h>
 int main() {
     // int a,b;
     // scanf("%d",&a);
@@ -80,12 +80,46 @@ int main() {
     // scanf("%d",&a);
     // scanf("%d",&b);
     // for (int i=0;i<b;i++){
-    //     n*=a;
+    //    n*=a;
     // }
     // printf("%d",n);
+  
 
-
-
-
+    // char str[]="hello";
+    // int len=strlen(str);
+    // for(int i=len-1;i>=0;i--){
+    //     printf("%c",str[i]);
+    // }
+    // int n;
+    // puts("enter a value :");
+    // scanf("%d",&n);
+    
+    // int array[n];
+    // for(int i=0;i<n;i++){
+    //     scanf("%d",&array[i]);
+    // }
+    
+    // int largest=array[0],secondLarest=array[0];
+    // for (int i=0;i<n;i++){
+    //     if (array[i]>largest){
+    //         largest=array[i];
+    //     }
+    // }
+    // for (int j=0;j<n;j++){
+    //     if(array[j]>secondLarest&&array[j]!=largest){
+    //         secondLarest=array[j];
+    //     }
+    // }
+    // printf("%d %d",largest,secondLarest);
+    int n;
+    scanf("%d",&n);
+    int array[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&array[i]);
+    }
+    for (int i=0;i<n;i++){
+        printf("%d\n",array[i]);
+    }
+    
     return 0;
 }
