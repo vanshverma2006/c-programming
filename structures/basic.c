@@ -1,15 +1,23 @@
 #include<stdio.h>
-struct basic_info
-{
-    float age;
-    float salary;
-};
+#include <string.h>
+
 
 int main(){
-    struct basic_info e1;
-    e1.age=18;
-    e1.salary=10000000;
+    // pehle data type banayenge (like int ,float hote hai to humne khud eke data type bna diya jisme int and char value store hogi )
+    struct studentInfo{// user defined data type 
+         
+        int age;
+        int salary;
+
+    };
+// ab hamne variable bna diya st1 jisme info store karenge 
+    struct studentInfo st1;
+    st1.salary=100000000000000000;
+    st1.age=18;
+
     
-    
+    // to print 
+    printf("%d",st1.age );
+
     return 0;
 }
