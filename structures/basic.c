@@ -18,6 +18,15 @@ int main(){
     
     // to print 
     printf("%d",st1.age );
+ 
 
+    // another short way to declare 
+    struct strawHats{
+        int attack ;
+        int health ;
+    }luffy ,nami,zoro,robin;
+
+    // now we can directly assign values 
+    luffy.health = 10000;
     return 0;
 }
