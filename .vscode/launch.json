@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/vanshverma/c programing/practice",
-      "program": "/Users/vanshverma/c programing/practice/build/Debug/outDebug"
+      "cwd": "/Users/vanshverma/c programing/loops",
+      "program": "/Users/vanshverma/c programing/loops/build/Debug/outDebug"
     }
   ]
 }
