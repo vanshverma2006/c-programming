@@ -14,7 +14,7 @@ int main(){
     int* j=&i;//j is a pointer pointing to i (j is a integer pointer)
     printf("\nthe address of i is %p",j);
 
-    printf("the value at address j %d",*j);// this will give value of i 
+    printf("\nthe value at address j %d",*j);// this will give value of i 
     // basically jo variable ke andar value store hai ye output mai vo de deta hai
 
     // pointer ka bki apna khud ka address hota hai
