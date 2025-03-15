@@ -35,7 +35,7 @@ int main(){
 
 
 
-// efficient method 
+// efficient method  
         int n;
     printf("Enter a number: ");
     scanf("%d", &n);
