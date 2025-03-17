@@ -8,28 +8,18 @@ int main(){
         printf("\nenter array[%d]",i);
         scanf("%d",&array[i]);
     }
-
     for (int i=0;i<n-1;i++){
-        for(int j=i+1;j<n;j++){
-            if (array[i]>array[j]){
+        for (int j=0;j<n-i-1;j++){
+            if (array[j]>array[j+1]){
                 int temp;
-                temp=array[i];
-                array[i]=array[j];
-                array[j]=temp;
+                temp = array[j];
+                array[j]=array[j+1];
+                array[j+1]=temp;
             }
         }
     }
     for (int i=0;i<n;i++){
         printf("%d\n",array[i]);
-    }
-
-    for (int i=0 ;i<n-1;i++){
-        for (int j=i+1;j<n;j++){
-            if (array[i]==array[j]){
-                printf("duplicates : %d",array[j]);
-
-            }
-        }
     }
 
     return 0;
