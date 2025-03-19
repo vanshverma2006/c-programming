@@ -12,6 +12,7 @@ int gcd(int firstNum,int secondNum ){
     }
         return hcf;
 }
+ 
 int main(){
     int firstNum,secondNum;
     scanf("%d",&firstNum);
