@@ -20,7 +20,7 @@ int gcd(int firstNum,int secondNum ){
  int lcm(int firstNum,int secondNum ){
     int lcm=0;
     for (int i=1;i<=(firstNum*secondNum);i++){
-        if(firstNum%i==0 || secondNum%i==0){
+        if(firstNum%i==0 || secondNum%i==0 || i%firstNum==0||i%secondNum==0){
             lcm=i;
         }
     }

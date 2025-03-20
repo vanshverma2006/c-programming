@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Function definition (above main)
+
 void swap(int* a, int* b) {
     int temp;
     temp = *a;
@@ -11,9 +11,9 @@ int main() {
     int a = 2, b = 4;
     printf("Before swap: a = %d, b = %d\n", a, b);
     
-    swap(&a, &b);  // Pass the addresses of a and b to swap
+    swap(&a, &b);  
 
-    printf("After swap: a = %d, b = %d\n", a, b);  // Check the swapped values
+    printf("After swap: a = %d, b = %d\n", a, b); 
     
     return 0;
 }
