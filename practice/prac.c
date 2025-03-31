@@ -9,7 +9,7 @@ void rec(int row,int col){
     for (int i=0;i<row;i++){
         for (int j=0;j<col;j++){
             printf("*");
-        }puts("");
+        }printf("\n");
     }
 }
 
@@ -47,6 +47,7 @@ void new(int n){
 }
 void pyramid(int n){
     for (int i=1;i<=n;i++){
+
         for(int j=1;j<=2*i-1;j++){
             printf("*");
         }puts("");

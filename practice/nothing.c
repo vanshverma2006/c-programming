@@ -31,6 +31,14 @@ void floyd(int n) {
         puts(""); // New line after each row
     }
 }
+void inputArray(int array[],int n){
+    for (int i=0;i<n;i++){
+        scanf("%d",&array[i]);
+    }
+}
+void kshift(int array[],int n,int shift){
+    
+}
 int main(){
    int n;
    scanf("%d",&n);
