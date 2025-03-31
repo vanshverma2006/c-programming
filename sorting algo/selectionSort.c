@@ -8,7 +8,6 @@ void input(int array[],int n){
         printf("%d ",array[i]);
     }
 }
-
 void selectionSort(int array[],int n){
     for (int i=0;i<n-1;i++){
         for(int j=i+1;j<n;j++){
