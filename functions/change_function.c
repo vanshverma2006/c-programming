@@ -10,6 +10,7 @@ int main(){
     // The value of b remains 22
     printf("b is %d", b);
     printf("\n%d",result);
+
     return 0;
 
 }
