@@ -1,48 +1,44 @@
 #include<stdio.h>
-int factorial(int n ){
-    if (n==1||n==0){
-        return 1;
-    }
-    return n * factorial(n-1);
-}
-
-void count(int n){
-    if (n==0) return ;
-    printf("%d",n);
-    count(n-1);
-    printf("%d",n);
-
-}
-int sum(int end,int s){
-    if (end == 0) return s;
-    return sum(end-1,s+end);
-}
-int power(int base,int p){
-    int ans ;
-    if (power==0) return ans  ;
-    return ans =base * power(base,p-1);
-}
-void floyd(int n) {
-    int num = 1; // Start from 1
-    for (int i = 1; i <= n; i++) { // Start from 1 to n
-        for (int j = 1; j <= i; j++) {
-            printf("%d ", num++);
-        }
-        puts(""); // New line after each row
-    }
-}
 void inputArray(int array[],int n){
     for (int i=0;i<n;i++){
+        printf("enter value of %d : ",i+1);
         scanf("%d",&array[i]);
     }
 }
-void kshift(int array[],int n,int shift){
-    
+void kShift(int array[],int n,int k ){
+    for (int i=0;i<k;i++){
+        for (int j=0;j<n;j++){
+            if (j==n-1){
+                int temp;
+                temp=array[0];
+                array[0]=array[n-1];
+                array[n-1]=temp;
+                for(int k=1;k<n;k++){
+                    int temp ;
+                    temp=array[n-k-2];
+                    array[n-k-2]=array[n-k-1];
+                    array[n-k-1]=temp;
+                }
+            }
+        }
+    }
+}
+void printArray(int array[],int n){
+    for (int i=0;i<n;i++){
+        printf("%d ",array[i]);
+    }
 }
 int main(){
-   int n;
-   scanf("%d",&n);
-   floyd(n);
+    int n;
+    printf("enter value of n : ");
+    scanf("%d",&n);
+    int array[n];
+    inputArray(array,n);
+    int k;
+    printf("enter value of k : ");
+    scanf("%d",&k);
+    kShift(array,n,k);
+    printArray(array,n);
 
     return 0;
 }

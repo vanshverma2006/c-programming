@@ -42,6 +42,6 @@ int main(){
     int array[n];
     input2DArray(n,array,n);
     printArray(n,n,array);
-    
+
     return 0;
 }
