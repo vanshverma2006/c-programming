@@ -1,67 +1,18 @@
-#include<stdio.h>
-void comma(int n){
-    for (int i=0;i<n;i++){
-        printf("%d",i+1);
-        if(i<n-1) printf(",");
-    }
-}
-void rec(int row,int col){
-    for (int i=0;i<row;i++){
-        for (int j=0;j<col;j++){
-            printf("*");
-        }printf("\n");
-    }
-}
+#include <SDL.h>
 
-void square(int n){
-    for (int i=0;i<n;i++){
-        for (int j=0;j<n;j++){
-            printf("*");
-        }puts("");
-    }
-}
+int main(int argc, char* argv[]) {
+    SDL_Init(SDL_INIT_VIDEO);
+    SDL_Window* window = SDL_CreateWindow("Test", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 640, 480, 0);
+    SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, 0);
 
-void halfPyramid(int n){
-    for (int i=1;i<=n;i++){
-        for (int j=1;j<=i;j++){
-            printf("*");
-        }puts("");
-    }
-}
-void numPyramid(int n){
-    for (int i=1;i<=n;i++){
-        for (int j=1;j<=i;j++){
-            printf("%d",j);
-        }puts("");
-    }
-}
-void new(int n){
-    for (int i=1;i<=n;i++){
-        for (int k=n-i;k>0;k--){
-            printf(" ");
-        }
-        for (int j=1;j<=i;j++){
-            printf("*");
-        }puts("");
-    }
-}
-void pyramid(int n){
-    for (int i=1;i<=n;i++){
+    SDL_SetRenderDrawColor(renderer, 0, 0, 255, 255); // Blue
+    SDL_RenderClear(renderer);
+    SDL_RenderPresent(renderer);
 
-        for(int j=1;j<=2*i-1;j++){
-            printf("*");
-        }puts("");
-    }
-}
-void swap (int *a,int *b){
-    *a=*a+*b;
-    *b=*a-*b;
-    *a=*a-*b;
+    SDL_Delay(2000);
 
-}
-int main(){
-    int n,m;
-    scanf("%d %d",&n,&m);
-    pyramid(n);
+    SDL_DestroyRenderer(renderer);
+    SDL_DestroyWindow(window);
+    SDL_Quit();
     return 0;
 }

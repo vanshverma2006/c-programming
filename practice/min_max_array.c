@@ -36,6 +36,24 @@ void sort(int array[],int n){
         }puts("");
     }
  }
+ void newArray(int arr[],int n){
+        for (int i=0;i<n;i++){
+            scanf("%d",&arr[i]);
+        }
+       
+            for (int i=0;i<n-1;i++){
+                for (int j=i+1;j<n;j++){
+                    if (arr[i]>arr[j]){
+                        int temp;
+                        temp=arr[i];
+                        arr[i]=arr[j];
+                        arr[j]=temp;
+                    }
+                }
+            
+        }
+
+ }
 int main(){
     int n;
     scanf("%d",&n);
@@ -44,4 +62,5 @@ int main(){
     printArray(n,n,array);
 
     return 0;
+
 }
